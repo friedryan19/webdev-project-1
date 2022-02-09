@@ -1,0 +1,133 @@
+body {
+    font-family: sans-serif;
+    background-color:hsl(0,0%,89%);
+    color:white;
+}
+
+.frame{
+    width: 390px;
+    height: 844px;
+    background-image: url(./images/background.png);
+    background-position: center;
+    background-size: cover;
+    margin: 100px auto;
+    border-radius: 25px;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+} 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+.icon{
+    width: 30px; 
+    fill: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    flex-grow: 1;
+}
+
+main h2{
+    font-size: 3rem;
+}
+
+main .date { 
+    font-size: 1.5rem;
+    color: rgb(87, 13, 13);
+}
+
+main .temp {
+font-size: 6rem;
+font-weight: bold;
+color: rgb(87, 13, 13);
+border-bottom: dashed white ;
+}
+
+main .weather{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+main .temp-range{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    columns: 3;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    color: white;
+    font-family: sans-serif;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main .flash{
+    margin-top: .1rem;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(./images/flashlight.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+    
+
+footer .icon svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+footer .day{
+    font-weight: bold;
+}
+.frame::after{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.35rem;
+    color: black;
+    content: '';
+    background-image: url(./images/arrow-up.svg);
+    background-size: 0.75rem 0.75rem;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(70%) translateX(-50%);
+    left: 50%;
+    background-color: #f6d200 ;
+    background-position-x: center;
+    background-position-y: 0.55rem;
+
+
+}

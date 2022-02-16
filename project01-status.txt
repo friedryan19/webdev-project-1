@@ -3,12 +3,9 @@ CS Training Project 01 Status
 Answer the following questions: 
 
 1. What's the URL of the github repo with your work for this project?
-https://github.com/friedryan19/Project-1
+https://github.com/friedryan19/webdev-project-1.git
 2. What's the URL that you deployed to?
-http://127.0.0.1:5500/index.html
+http://weather-ui.testrun.space
 3. Does your deployed page pass the W3C HTML Validator? (https://validator.w3.org/)
 No
 4. Which parts of this project did you have trouble with, if any?
-The part I had the most trouble with is the flash light.
-But I also had some trouble getting the icon in the right place.
-The last thing I had trouble with is submitting my work.

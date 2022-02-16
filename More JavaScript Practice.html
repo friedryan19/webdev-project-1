@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {box-sizing: border-box;}
+
+    main article {
+      display: none;   
+    }
+
+    main article.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="tab1">Tab 1</a></li>
+        <li><a class="tab2">Tab 2</a></li>
+        <li><a class="tab3">Tab 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="tab1">
+      <h2>Lorem</h2>
+      <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+        Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+        
+        Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]</p>
+    </article>
+
+    <article class="tab2">
+      <h2>99 Bottles of Beer</h2>
+      <p class="attribution">
+           If one of those bottles should happen to fall,98 bottles of beer on the wall.
+           No more bottles of beer on the wall, no more bottles of beer.
+           Go to the store and buy some more, 99 bottles of beer on the wall.
+           No more bottles of beer on the wall, no more bottles of beer.
+           We've taken them down and passed them around; now we're drunk and passed out!
+      </p>
+    </article>
+    <article class="tab3">
+        <h2>Fate Grand Order</h2>
+        <p class="Fate">Heroic Spirits that you, as the Master, command in Battle. Each Servant has a Class, active skills, passive skills, and Noble Phantasm. They are also grouped into 3 types the Knight classes (Saber, Archer and Lancer), Cavalry classes (Rider, Caster, Assassin and Berserker) and Extra classes (Ruler, Avenger, Moon Cancer, Shielder, Alter Ego, Foreigner and Pretender)</p>
+      </article>
+  </main>
+  <script>
+     (function() {
+      "use strict"
+
+       const btnTab1 = document.querySelector('nav .tab1');
+       const btnTab2 = document.querySelector('nav .tab2');
+       const btnTab3 = document.querySelector('nav .tab3');
+       const allArticles = document.querySelectorAll('main article');
+     
+      function init() {
+        btnTab1.addEventListener('click', function() {
+          const content = document.querySelector('article.tab1');
+          const isActive = content.classList.contains('active');
+          allArticles.forEach( articie => {
+            articie.classList.remove('active');
+          });
+          if (!isActive) {
+            content.classList.add('active');
+          }
+        });
+
+        btnTab2.addEventListener('click', function() {
+          const content = document.querySelector('article.tab2');
+          const isActive = content.classList.contains('active');
+          allArticles.forEach( articie => {
+            articie.classList.remove('active');
+          });
+          if (!isActive) {
+            content.classList.add('active');
+          }
+        });
+
+        btnTab3.addEventListener('click', function() {
+          const content = document.querySelector('article.tab3');
+          const isActive = content.classList.contains('active');
+          allArticles.forEach( articie => {
+            articie.classList.remove('active');
+          });
+          if (!isActive) {
+            content.classList.add('active');
+          }
+        });
+
+
+
+
+
+
+
+       
+      }
+      
+      window.addEventListener('load', init);
+    })();
+
+  </script>
+</body>
+</html>
